@@ -683,28 +683,41 @@
         </section>
 
         <section id="graficas" class="section">
-            <header class="graficas-header">
-                <h1 class="logo">🖼️ GRAFICAS FIVEM</h1>
-                <p class="graficas-subtitle">¡Los mejores packs GRATIS para tu servidor!</p>
-            </header>
-            
-            <section class="products-grid">
-                <div class="product-card">
-                    <span class="product-icon">🌤️</span>
-                    <h2 class="product-title">GRAFICAS REALISTAS FIVEM COMUNITY</h2>
-                    <p class="product-desc">¡Descarga el pack completo de graficas realistas!</p>
-                    <div class="price">GRATIS</div>
-                    <button class="buy-btn" onclick="descargar('graficas')">¡DESCARGAR MEGA PACK!</button>
-                    
-                    <!-- IMAGEN CON ZOOM AL HACER CLIC -->
-                    <img src="https://imgur.com/i9Od8Fx" 
-                         alt="Graficas Realistas Preview" 
-                         class="custom-image"
-                         onclick="abrirModal(this.src)">
-                    
-                </div>
-            </section>
-        </section>
+    <header class="graficas-header">
+        <h1 class="logo">🖼️ GRAFICAS FIVEM</h1>
+        <p class="graficas-subtitle">¡Los mejores packs GRATIS para tu servidor!</p>
+    </header>
+    
+    <section class="products-grid">
+
+        <!-- PRODUCTO 1 -->
+        <div class="product-card">
+            <span class="product-icon">🌤️</span>
+            <h2 class="product-title">GRAFICAS REALISTAS PACK Fivem Comunity</h2>
+            <p class="product-desc">Pack realista ultra optimizado para FiveM</p>
+            <div class="price">GRATIS</div>
+            <button class="buy-btn" onclick="descargar('graficas')">DESCARGAR</button>
+
+            <img src="https://imgur.com/i9Od8Fx.png"
+                 class="custom-image"
+                 onclick="abrirModal(this.src)">
+        </div>
+
+        <!-- PRODUCTO 2 -->
+        <div class="product-card">
+            <span class="product-icon">🌅</span>
+            <h2 class="product-title">GRAFICAS REALISTAS PACK 2</h2>
+            <p class="product-desc">Pack realista ultra optimizado para FiveM</p>
+            <div class="price">GRATIS</div>
+            <button class="buy-btn" onclick="descargar('graficas2')">DESCARGAR</button>
+
+            <img src="https://imgur.com/bdm4hpY.png"
+                 class="custom-image"
+                 onclick="abrirModal(this.src)">
+        </div>
+
+    </section>
+ </section>
             
         <!-- Resto del contenido igual... -->
         <section id="mechakeys" class="section">
@@ -880,6 +893,7 @@
         // DESCARGAS
         const enlaces = {
             'graficas': 'https://www.mediafire.com/file/k99h1a82l324xsk/FIVEM_COMUNITY__Pack_Realistas.zip/file',
+            'graficas2': 'https://drive.google.com/file/d/1F_jONSk0WmaZi5FMeetrZ3diyG36CDdM/view',
             'mechakeys': 'https://drive.google.com/drive/folders/1uA4VC1NQHIKq_75KgBePt0y7jUy54VO6?usp=sharing'
         };
 
