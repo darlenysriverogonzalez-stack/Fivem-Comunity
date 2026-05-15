@@ -21,10 +21,10 @@
 
         body {
             font-family: 'Exo 2', sans-serif;
-            background: linear-gradient(135deg, #0c0c0c 0%, #1a0033 25%, #0f0f23 50%, #1a1a2e 75%, #16213e 100%);
+            background: linear-gradient(135deg, #1a0000 0%, #330000 25%, #1a0a0a 50%, #2a0000 75%, #400000 100%);
             background-size: 400% 400%;
             animation: gradientShift 15s ease infinite;
-            color: #e0e6ed;
+            color: #ffffff;
             min-height: 100vh;
             overflow-x: hidden;
             cursor: none;
@@ -59,7 +59,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,20,0.98);
+            background: rgba(20,0,0,0.98);
             z-index: 10000;
             backdrop-filter: blur(20px) saturate(180%);
             animation: modalFadeIn 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -81,13 +81,13 @@
             max-height: 95%;
             border-radius: 25px;
             box-shadow: 
-                0 0 60px #00d4ff, 0 0 120px #0099cc, 
-                0 0 180px #0077aa, inset 0 0 40px rgba(0,212,255,0.3);
+                0 0 60px #ff0000, 0 0 120px #cc0000, 
+                0 0 180px #990000, inset 0 0 40px rgba(255,0,0,0.3);
             transform: scale(0.7);
             animation: zoomPulse 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
             cursor: zoom-out;
-            border: 3px solid #00d4ff;
-            filter: drop-shadow(0 0 30px #00d4ff);
+            border: 3px solid #ff0000;
+            filter: drop-shadow(0 0 30px #ff0000);
         }
 
         @keyframes zoomPulse {
@@ -100,7 +100,7 @@
             top: 40px;
             right: 50px;
             font-size: 3.5em;
-            background: linear-gradient(45deg, #ff0080, #ff4d94);
+            background: linear-gradient(45deg, #ff0000, #ff4d4d);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -108,20 +108,20 @@
             z-index: 10001;
             opacity: 0.9;
             transition: all 0.3s ease;
-            text-shadow: 0 0 20px rgba(255,0,128,0.6);
+            text-shadow: 0 0 20px rgba(255,0,0,0.6);
             backdrop-filter: blur(10px);
             padding: 10px;
             border-radius: 50%;
-            border: 2px solid #ff0080;
+            border: 2px solid #ff0000;
         }
 
         .close-modal:hover {
             opacity: 1;
             transform: scale(1.3) rotate(90deg);
-            box-shadow: 0 0 30px #ff0080;
+            box-shadow: 0 0 30px #ff0000;
         }
 
-        /* NUEVAS PARTICULAS CYBER */
+        /* PARTICULAS ROJO/BLANCO */
         .cyber-particles {
             position: fixed;
             top: 0;
@@ -134,11 +134,11 @@
 
         .cyber-particle {
             position: absolute;
-            background: linear-gradient(45deg, #00d4ff, #0099cc);
+            background: linear-gradient(45deg, #ff0000, #ffffff);
             border-radius: 50%;
             opacity: 0;
             animation: cyberFloat 25s infinite linear;
-            box-shadow: 0 0 20px #00d4ff;
+            box-shadow: 0 0 20px #ff0000;
         }
 
         @keyframes cyberFloat {
@@ -151,7 +151,7 @@
             }
             50% {
                 opacity: 0.4;
-                filter: hue-rotate(90deg);
+                filter: hue-rotate(0deg);
             }
             90% {
                 opacity: 0.6;
@@ -162,19 +162,19 @@
             }
         }
 
-        /* CURSOR CYBERPUNK */
+        /* CURSOR ROJO/BLANCO */
         .custom-cursor {
             position: fixed;
             width: 20px;
             height: 20px;
-            background: conic-gradient(from 0deg, #00d4ff, #0099cc, #ff0080, #00d4ff);
+            background: conic-gradient(from 0deg, #ff0000, #ffffff, #ff6666, #ff0000);
             border-radius: 50%;
             pointer-events: none;
             z-index: 9999;
             transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
             box-shadow: 
-                0 0 25px #00d4ff, 0 0 50px #0099cc,
-                inset 0 0 10px rgba(0,212,255,0.5);
+                0 0 25px #ff0000, 0 0 50px #ffffff,
+                inset 0 0 10px rgba(255,0,0,0.5);
             animation: cursorRotate 3s linear infinite;
         }
 
@@ -190,9 +190,9 @@
             transform: translate(-50%, -50%);
             width: 8px;
             height: 8px;
-            background: #ffffff;
+            background: #ff0000;
             border-radius: 50%;
-            box-shadow: 0 0 15px #ffffff;
+            box-shadow: 0 0 15px #ff0000;
             animation: pulseDot 1.5s infinite;
         }
 
@@ -205,20 +205,20 @@
             width: 50px !important;
             height: 50px !important;
             box-shadow: 
-                0 0 40px #00d4ff, 0 0 80px #0099cc, 0 0 120px #ff0080;
+                0 0 40px #ff0000, 0 0 80px #ffffff, 0 0 120px #ff6666;
             transform: scale(1.2) !important;
         }
 
-        /* NAVBAR FLOTANTE */
+        /* NAVBAR ROJO/BLANCO */
         .navbar {
-            background: rgba(12,12,28,0.95);
+            background: rgba(40,0,0,0.95);
             backdrop-filter: blur(20px);
-            border-bottom: 2px solid #00d4ff;
+            border-bottom: 2px solid #ff0000;
             padding: 20px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 8px 32px rgba(0,212,255,0.3);
+            box-shadow: 0 8px 32px rgba(255,0,0,0.3);
         }
 
         .nav-container {
@@ -234,17 +234,17 @@
             font-family: 'Orbitron', monospace;
             font-size: 2em;
             font-weight: 900;
-            background: linear-gradient(45deg, #00d4ff, #ffffff, #ff0080);
+            background: linear-gradient(45deg, #ff0000, #ffffff, #ff6666);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            text-shadow: 0 0 30px rgba(0,212,255,0.8);
+            text-shadow: 0 0 30px rgba(255,0,0,0.8);
             animation: logoGlow 3s ease-in-out infinite alternate;
         }
 
         @keyframes logoGlow {
-            from { filter: drop-shadow(0 0 10px #00d4ff); }
-            to { filter: drop-shadow(0 0 30px #00d4ff) drop-shadow(0 0 50px #ff0080); }
+            from { filter: drop-shadow(0 0 10px #ff0000); }
+            to { filter: drop-shadow(0 0 30px #ff0000) drop-shadow(0 0 50px #ffffff); }
         }
 
         .nav-links {
@@ -254,7 +254,7 @@
         }
 
         .nav-link {
-            color: #e0e6ed;
+            color: #ffffff;
             text-decoration: none;
             font-size: 1.1em;
             font-weight: 600;
@@ -262,7 +262,7 @@
             border-radius: 50px;
             transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             position: relative;
-            background: rgba(0,212,255,0.1);
+            background: rgba(255,0,0,0.1);
             border: 2px solid transparent;
             backdrop-filter: blur(10px);
         }
@@ -274,7 +274,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, #00d4ff, #ff0080);
+            background: linear-gradient(45deg, #ff0000, #ffffff);
             border-radius: 50px;
             z-index: -1;
             opacity: 0;
@@ -290,8 +290,8 @@
         .nav-link.active {
             color: #000;
             transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 15px 40px rgba(0,212,255,0.4);
-            border-color: #00d4ff;
+            box-shadow: 0 15px 40px rgba(255,0,0,0.4);
+            border-color: #ff0000;
         }
 
         /* SECCIONES CON ANIMACIONES */
@@ -327,14 +327,14 @@
         header {
             text-align: center;
             padding: 80px 0;
-            background: rgba(20,20,60,0.6);
+            background: rgba(40,0,0,0.6);
             backdrop-filter: blur(20px);
-            border: 2px solid #00d4ff;
+            border: 2px solid #ff0000;
             border-radius: 30px;
             margin-bottom: 60px;
             box-shadow: 
-                0 20px 60px rgba(0,212,255,0.3),
-                inset 0 0 40px rgba(0,212,255,0.1);
+                0 20px 60px rgba(255,0,0,0.3),
+                inset 0 0 40px rgba(255,0,0,0.1);
             position: relative;
             overflow: hidden;
         }
@@ -346,7 +346,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: conic-gradient(transparent, rgba(0,212,255,0.1), transparent);
+            background: conic-gradient(transparent, rgba(255,0,0,0.1), transparent);
             animation: rotate 20s linear infinite;
         }
 
@@ -359,9 +359,9 @@
             font-size: 4.5em;
             font-weight: 900;
             text-shadow: 
-                0 0 20px #00d4ff,
-                0 0 40px #ff0080;
-            background: linear-gradient(45deg, #00d4ff, #ffffff, #ff0080, #00d4ff);
+                0 0 20px #ff0000,
+                0 0 40px #ffffff;
+            background: linear-gradient(45deg, #ff0000, #ffffff, #ff6666, #ff0000);
             background-size: 300% 300%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -383,7 +383,7 @@
         }
 
         .highlight {
-            background: linear-gradient(45deg, #ff0080, #ff4d94);
+            background: linear-gradient(45deg, #ff0000, #ffffff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -394,15 +394,15 @@
         @keyframes pulseGlow {
             0%, 100% { 
                 transform: scale(1); 
-                filter: drop-shadow(0 0 10px #ff0080);
+                filter: drop-shadow(0 0 10px #ff0000);
             }
             50% { 
                 transform: scale(1.08); 
-                filter: drop-shadow(0 0 25px #ff0080);
+                filter: drop-shadow(0 0 25px #ff0000);
             }
         }
 
-        /* CARDS CON ANIMACIONES MODERNAS */
+        /* CARDS ROJO/BLANCO */
         .products-grid, .mechakeys-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -411,9 +411,9 @@
         }
 
         .product-card, .mechakeys-card {
-            background: rgba(20,20,60,0.6);
+            background: rgba(40,0,0,0.6);
             backdrop-filter: blur(20px);
-            border: 2px solid #00d4ff;
+            border: 2px solid #ff0000;
             border-radius: 25px;
             padding: 40px;
             text-align: center;
@@ -444,7 +444,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(0,212,255,0.3), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255,0,0,0.3), transparent);
             transition: left 0.7s;
         }
 
@@ -454,17 +454,17 @@
 
         .product-card:hover, .mechakeys-card:hover {
             transform: translateY(-20px) scale(1.02);
-            border-color: #ff0080;
+            border-color: #ffffff;
             box-shadow: 
-                0 30px 80px rgba(0,212,255,0.4),
-                0 0 40px rgba(255,0,128,0.3);
+                0 30px 80px rgba(255,0,0,0.4),
+                0 0 40px rgba(255,255,255,0.3);
         }
 
         .product-icon, .mechakeys-icon {
             font-size: 5em;
             margin-bottom: 25px;
             display: block;
-            filter: drop-shadow(0 0 20px #00d4ff);
+            filter: drop-shadow(0 0 20px #ff0000);
             animation: iconFloat 3s ease-in-out infinite;
         }
 
@@ -505,13 +505,13 @@
         .price {
             font-family: 'Orbitron', monospace;
             font-size: 3em;
-            background: linear-gradient(45deg, #00d4ff, #ff0080);
+            background: linear-gradient(45deg, #ff0000, #ffffff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             font-weight: 900;
             margin-bottom: 25px;
-            text-shadow: 0 0 30px rgba(0,212,255,0.8);
+            text-shadow: 0 0 30px rgba(255,0,0,0.8);
             animation: pricePulse 2s infinite;
         }
 
@@ -520,7 +520,7 @@
             50% { transform: scale(1.1); }
         }
 
-        /* BOTÓN MODERNO BASE */
+        /* BOTÓN ROJO/BLANCO */
         .buy-btn, .youtube-btn, .discord-btn {
             padding: 18px 50px;
             font-size: 1.4em;
@@ -529,7 +529,7 @@
             transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             text-transform: uppercase;
             letter-spacing: 3px;
-            box-shadow: 0 10px 30px rgba(0,212,255,0.4);
+            box-shadow: 0 10px 30px rgba(255,0,0,0.4);
             cursor: pointer;
             margin: 10px auto;
             display: block;
@@ -556,22 +556,22 @@
         }
 
         .buy-btn {
-            background: linear-gradient(45deg, #00d4ff, #0099cc);
-            color: #000;
-            border-color: #00d4ff;
+            background: linear-gradient(45deg, #ff0000, #cc0000);
+            color: #ffffff;
+            border-color: #ff0000;
         }
 
         .buy-btn:hover {
-            background: linear-gradient(45deg, #ff0080, #ff4d94);
-            border-color: #ff0080;
-            color: #fff;
+            background: linear-gradient(45deg, #ffffff, #ff6666);
+            border-color: #ffffff;
+            color: #000;
             transform: translateY(-8px) scale(1.1);
             box-shadow: 
-                0 20px 50px rgba(255,0,128,0.5),
-                0 0 30px rgba(255,0,128,0.3);
+                0 20px 50px rgba(255,255,255,0.5),
+                0 0 30px rgba(255,0,0,0.3);
         }
 
-        /* BOTÓN YOUTUBE MEJORADO */
+        /* BOTÓN YOUTUBE */
         .youtube-btn {
             background: linear-gradient(45deg, #ff0000, #cc0000);
             color: #ffffff;
@@ -582,13 +582,13 @@
         }
 
         .youtube-btn:hover {
-            background: linear-gradient(45deg, #ff4d4d, #ff0000);
-            border-color: #ff4d4d;
+            background: linear-gradient(45deg, #ffffff, #ff6666);
+            border-color: #ffffff;
             color: #000;
             transform: translateY(-8px) scale(1.1);
             box-shadow: 
-                0 20px 50px rgba(255,0,0,0.6),
-                0 0 30px rgba(255,77,77,0.5);
+                0 20px 50px rgba(255,255,255,0.6),
+                0 0 30px rgba(255,102,102,0.5);
         }
 
         /* IMAGEN MEJORADA */
@@ -598,10 +598,10 @@
             height: 250px;
             object-fit: cover;
             border-radius: 25px;
-            border: 3px solid #00d4ff;
+            border: 3px solid #ff0000;
             box-shadow: 
-                0 20px 50px rgba(0,212,255,0.4),
-                inset 0 0 20px rgba(0,212,255,0.2);
+                0 20px 50px rgba(255,0,0,0.4),
+                inset 0 0 20px rgba(255,0,0,0.2);
             transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             margin-top: 30px;
             cursor: zoom-in;
@@ -611,10 +611,10 @@
         .custom-image:hover {
             transform: translateY(-15px) scale(1.05) rotate(2deg);
             box-shadow: 
-                0 40px 100px rgba(0,212,255,0.6),
-                inset 0 0 30px rgba(0,212,255,0.4),
-                0 0 40px rgba(255,0,128,0.4);
-            border-color: #ff0080;
+                0 40px 100px rgba(255,0,0,0.6),
+                inset 0 0 30px rgba(255,0,0,0.4),
+                0 0 40px rgba(255,255,255,0.4);
+            border-color: #ffffff;
             filter: brightness(1.3) contrast(1.3) saturate(1.5);
         }
 
@@ -622,37 +622,37 @@
         .graficas-header, .mechakeys-header, .info-header {
             text-align: center;
             padding: 60px 0;
-            background: rgba(20,20,60,0.7);
+            background: rgba(40,0,0,0.7);
             backdrop-filter: blur(25px);
-            border: 2px solid #00d4ff;
+            border: 2px solid #ff0000;
             border-radius: 30px;
             margin-bottom: 60px;
             box-shadow: 
-                0 25px 70px rgba(0,212,255,0.3),
-                inset 0 0 50px rgba(0,212,255,0.1);
+                0 25px 70px rgba(255,0,0,0.3),
+                inset 0 0 50px rgba(255,0,0,0.1);
         }
 
         .graficas-header h1, .mechakeys-header h1, .info-header h1 {
             font-family: 'Orbitron', monospace;
             font-size: 3.5em;
             margin-bottom: 25px;
-            background: linear-gradient(45deg, #00d4ff, #ff0080);
+            background: linear-gradient(45deg, #ff0000, #ffffff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            filter: drop-shadow(0 0 25px rgba(0,212,255,0.8));
+            filter: drop-shadow(0 0 25px rgba(255,0,0,0.8));
         }
 
-        /* DISCORD */
+        /* DISCORD ROJO/BLANCO */
         .discord-section {
-            background: rgba(40,20,80,0.8);
+            background: rgba(60,0,0,0.8);
             padding: 80px 50px;
-            border: 3px solid #ff0080;
+            border: 3px solid #ffffff;
             border-radius: 30px;
             text-align: center;
             box-shadow: 
-                0 30px 80px rgba(255,0,128,0.4),
-                inset 0 0 50px rgba(255,0,128,0.2);
+                0 30px 80px rgba(255,255,255,0.4),
+                inset 0 0 50px rgba(255,255,255,0.2);
             max-width: 700px;
             margin: 0 auto 60px;
             backdrop-filter: blur(25px);
@@ -662,16 +662,16 @@
             font-family: 'Orbitron', monospace;
             font-size: 3.5em;
             margin-bottom: 25px;
-            background: linear-gradient(45deg, #ff0080, #ffffff);
+            background: linear-gradient(45deg, #ffffff, #ff0000);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
         .discord-btn {
-            background: linear-gradient(45deg, #ff0080, #ff4d94);
+            background: linear-gradient(45deg, #ff0000, #ffffff);
             color: #000;
-            border: 3px solid #ff0080;
+            border: 3px solid #ff0000;
             padding: 25px 70px;
             font-size: 1.9em;
             font-weight: 800;
@@ -679,7 +679,7 @@
             transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             text-decoration: none;
             display: inline-block;
-            box-shadow: 0 20px 60px rgba(255,0,128,0.5);
+            box-shadow: 0 20px 60px rgba(255,0,0,0.5);
             margin: 25px 15px;
             text-transform: uppercase;
             letter-spacing: 4px;
@@ -690,9 +690,9 @@
 
         .discord-btn:hover {
             transform: translateY(-12px) scale(1.08);
-            box-shadow: 0 35px 90px rgba(255,0,128,0.7);
-            color: #fff;
-            background: linear-gradient(45deg, #ffffff, #ff0080);
+            box-shadow: 0 35px 90px rgba(255,255,255,0.7);
+            color: #000;
+            background: linear-gradient(45deg, #ffffff, #ff0000);
         }
 
         /* FEATURES Y INFO */
@@ -708,9 +708,9 @@
 
         .feature, .info-card {
             padding: 40px;
-            background: rgba(20,20,60,0.5);
+            background: rgba(40,0,0,0.5);
             backdrop-filter: blur(20px);
-            border: 2px solid #0099cc;
+            border: 2px solid #cc0000;
             border-radius: 25px;
             transition: all 0.4s ease;
             transform: translateY(20px);
@@ -731,8 +731,8 @@
 
         .feature:hover, .info-card:hover {
             transform: translateY(-15px);
-            border-color: #00d4ff;
-            box-shadow: 0 25px 70px rgba(0,212,255,0.4);
+            border-color: #ff0000;
+            box-shadow: 0 25px 70px rgba(255,0,0,0.4);
         }
 
         .feature h3, .info-title {
@@ -746,28 +746,28 @@
         footer {
             text-align: center;
             padding: 50px;
-            background: rgba(12,12,28,0.9);
+            background: rgba(40,0,0,0.9);
             backdrop-filter: blur(20px);
-            border: 2px solid #0099cc;
+            border: 2px solid #cc0000;
             border-radius: 25px;
             margin-top: 80px;
-            box-shadow: 0 20px 60px rgba(0,153,204,0.3);
+            box-shadow: 0 20px 60px rgba(204,0,0,0.3);
         }
 
-        /* CONTADOR */
+        /* CONTADOR ROJO/BLANCO */
         #contadorDiv {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: linear-gradient(45deg, #00d4ff, #0099cc);
+            background: linear-gradient(45deg, #ff0000, #ffffff);
             color: #000;
             padding: 20px 30px;
             border-radius: 50px;
             font-weight: 800;
             font-size: 1.3em;
-            box-shadow: 0 20px 60px rgba(0,212,255,0.6);
+            box-shadow: 0 20px 60px rgba(255,0,0,0.6);
             z-index: 9999;
-            border: 3px solid #ffffff;
+            border: 3px solid #000000;
             font-family: 'Orbitron', monospace;
             animation: counterPulse 2s infinite;
             backdrop-filter: blur(15px);
@@ -845,7 +845,7 @@
             </header>
 
             <section class="features">
-                <h2 style="font-family: 'Orbitron', monospace; font-size: 3em; margin-bottom: 40px; background: linear-gradient(45deg, #00d4ff, #ff0080); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">¿Por qué elegir Fivem Community?</h2>
+                <h2 style="font-family: 'Orbitron', monospace; font-size: 3em; margin-bottom: 40px; background: linear-gradient(45deg, #ff0000, #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">¿Por qué elegir Fivem Community?</h2>
                 <div class="features-grid">
                     <div class="feature">
                         <h3>✅ 100% Gratis</h3>
@@ -931,18 +931,18 @@
 
             <section class="info-grid">
                 <div class="info-card">
-                    <span class="info-icon" style="font-size: 4em; filter: drop-shadow(0 0 20px #00d4ff);">🔧</span>
+                    <span class="info-icon" style="font-size: 4em; filter: drop-shadow(0 0 20px #ff0000);">🔧</span>
                     <h2 class="info-title">📥 Instalación Fácil</h2>
                     <div class="info-content" style="line-height: 1.8; font-size: 1.1em;">
                         <p><strong>1️⃣</strong> Descarga el ZIP</p>
-                        <p><strong>2️⃣</strong> Abre La Carpeta <code style="background: rgba(0,212,255,0.2); padding: 8px 12px; border-radius: 8px; border: 1px solid #00d4ff; color: #00d4ff;">Abre Fivem APP DATA/</code></p>
-                        <p><strong>3️⃣</strong> <code style="background: rgba(0,212,255,0.2); padding: 8px 12px; border-radius: 8px; border: 1px solid #00d4ff; color: #00d4ff;">Pon Los Mods El Citizen O Lo Que Traiga Las Graficas</code> Inicia Fivem</p>
-                        <p><strong>4️⃣</strong> <code style="background: rgba(0,212,255,0.2); padding: 8px 12px; border-radius: 8px; border: 1px solid #00d4ff; color: #00d4ff;">Entra A Un Servidor Y Pruebalas</code> ✅</p>
+                        <p><strong>2️⃣</strong> Abre La Carpeta <code style="background: rgba(255,0,0,0.2); padding: 8px 12px; border-radius: 8px; border: 1px solid #ff0000; color: #ff0000;">Abre Fivem APP DATA/</code></p>
+                        <p><strong>3️⃣</strong> <code style="background: rgba(255,0,0,0.2); padding: 8px 12px; border-radius: 8px; border: 1px solid #ff0000; color: #ff0000;">Pon Los Mods El Citizen O Lo Que Traiga Las Graficas</code> Inicia Fivem</p>
+                        <p><strong>4️⃣</strong> <code style="background: rgba(255,0,0,0.2); padding: 8px 12px; border-radius: 8px; border: 1px solid #ff0000; color: #ff0000;">Entra A Un Servidor Y Pruebalas</code> ✅</p>
                     </div>
                 </div>
 
                 <div class="info-card">
-                    <span class="info-icon" style="font-size: 4em; filter: drop-shadow(0 0 20px #ff0080);">🛡️</span>
+                    <span class="info-icon" style="font-size: 4em; filter: drop-shadow(0 0 20px #ffffff);">🛡️</span>
                     <h2 class="info-title">🔒 100% Seguro</h2>
                     <div class="info-content" style="line-height: 1.8;">
                         <p>✅ <strong>Verificado sin virus</strong></p>
@@ -953,7 +953,7 @@
                 </div>
 
                 <div class="info-card">
-                    <span class="info-icon" style="font-size: 4em; filter: drop-shadow(0 0 20px #0099cc);">⚙️</span>
+                    <span class="info-icon" style="font-size: 4em; filter: drop-shadow(0 0 20px #cc0000);">⚙️</span>
                     <h2 class="info-title">🎮 Requisitos</h2>
                     <div class="info-content" style="line-height: 1.8;">
                         <p>✅ Graficas actualizado</p>
@@ -962,7 +962,7 @@
                 </div>
 
                 <div class="info-card">
-                    <span class="info-icon" style="font-size: 4em; filter: drop-shadow(0 0 20px #ff0080);">💬</span>
+                    <span class="info-icon" style="font-size: 4em; filter: drop-shadow(0 0 20px #ffffff);">💬</span>
                     <h2 class="info-title">🆘 Soporte 24/7</h2>
                     <div class="info-content" style="line-height: 1.8;">
                         <p>📞 <strong>Discord Oficial</strong></p>
@@ -992,7 +992,7 @@
         <footer>
             <h3 style="font-family: 'Orbitron', monospace; font-size: 2.2em; margin-bottom: 20px;">Fivem Community © 2026</h3>
             <p style="font-size: 1.3em; opacity: 0.9; margin-bottom: 15px;">La mejor comunidad de recursos GRATIS para FiveM</p>
-            <p style="font-size: 1.5em; font-weight: 800; color: #00d4ff;"><strong>¡Únete mas de +34 usuarios felices!</strong></p>
+            <p style="font-size: 1.5em; font-weight: 800; color: #ff0000;"><strong>¡Únete mas de +34 usuarios felices!</strong></p>
         </footer>
     </div>
 
@@ -1024,7 +1024,7 @@
             if (e.key === 'Escape') cerrarModal();
         });
 
-        // CYBER PARTICLES
+        // CYBER PARTICLES ROJO/BLANCO
         function createCyberParticle() {
             const particle = document.createElement('div');
             particle.className = 'cyber-particle';
@@ -1091,14 +1091,14 @@
                 if (producto === 'mechakeys') {
                     mensaje = `✅ ¡MECHKEYS DESCARGADO!\n⌨️ ¡Personaliza tus teclas! 🔥`;
                 }
-                // Modern notification
+                // Modern notification ROJO/BLANCO
                 const notification = document.createElement('div');
                 notification.style.cssText = `
                     position: fixed; top: 20px; right: 20px; 
-                    background: linear-gradient(45deg, #00d4ff, #ff0080);
+                    background: linear-gradient(45deg, #ff0000, #ffffff);
                     color: #000; padding: 20px 30px; border-radius: 15px;
                     font-family: 'Orbitron', monospace; font-weight: 800;
-                    font-size: 1.2em; z-index: 10001; box-shadow: 0 20px 60px rgba(0,212,255,0.6);
+                    font-size: 1.2em; z-index: 10001; box-shadow: 0 20px 60px rgba(255,0,0,0.6);
                     animation: slideInRight 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
                 `;
                 notification.textContent = mensaje;
